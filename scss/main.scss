@@ -1,0 +1,156 @@
+@import "verables";
+@import "mixin";
+@import "fonts";
+@import "normalize";
+@import "general";
+@import "blocks/block";
+
+.site-main {
+    padding-top: 24px;
+    background-color: var(--site-bg-color);
+}
+.form-input {
+    margin-bottom: 40px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 74px;
+    background-color: var(--main-bg-color);
+    background-image: url("../images/search.svg");
+    background-repeat: no-repeat;
+    background-position: left 25px center;
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
+}
+.form-input::placeholder {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #C4C4C4;
+}
+.form-input:focus {
+    background: none;
+    padding-left: 15px;
+    background-color: var(--main-bg-color);
+}
+.countries-select {
+    width: 200px;
+    padding: 14px 24px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    background-color: var(--main-bg-color);
+    color: var(--text-color);    
+    border: none;
+}
+.contents {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    border: none;
+    color: var(--text-color);    
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
+}
+.countries-item {
+    width: 264px;
+    background-color: var(--main-bg-color);
+}
+.countries-link {
+    padding: 24px;
+}
+.countries-name {
+    margin-bottom: 16px;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--text-color);    
+}
+.countries-info {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--text-color);    
+}
+.countries-info-text {
+    font-weight: 400;
+}
+.countries-item:nth-child(1)::before {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 160px;
+    background-image: url("../images/germany.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 160px;
+}
+.countries-item:nth-child(2)::before {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 160px;
+    background-image: url("../images/usa.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 160px;
+}
+.countries-item:nth-child(3)::before {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 160px;
+    background-image: url("../images/iceland.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 160px;
+}
+.countries-item:nth-child(4)::before {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 160px;
+    background-image: url("../images/brasil.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 160px;
+}
+.countries-item:nth-child(5)::before {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 160px;
+    background-image: url("../images/afganistan.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 160px;
+}
+.countries-item:nth-child(6)::before {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 160px;
+    background-image: url("../images/aland-islands.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 160px;
+}
+.countries-item:nth-child(7)::before {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 160px;
+    background-image: url("../images/albany.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 160px;
+}
+.countries-item:nth-child(8)::before {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 160px;
+    background-image: url("../images/algeriya.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 160px;
+}
+.dark {
+    --main-bg-color: #2B3844;
+    --site-bg-color: #202C36;
+    --text-color: #fff;
+}

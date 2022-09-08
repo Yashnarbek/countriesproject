@@ -1,0 +1,26 @@
+.site-header {
+    background-color: var(--main-bg-color);
+}
+.site-logo svg {
+    fill: var(--text-color);
+}
+.dark-light-node {
+    padding-left: 30px;
+    text-decoration: none;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    background-image: url("../images/mun.svg");
+    background-repeat: no-repeat;
+    background-position: left 10px center;
+    background-size: 15px;
+    color: var(--text-color);    
+}
+.dark-light-node  {
+    outline: none;
+    border: none;
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+}
