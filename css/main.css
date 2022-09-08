@@ -1,7 +1,7 @@
 :root {
   --main-font-weight: 400;
   --main-bg-color: #fff;
-  --site-bg-color: #f2f2f2;
+  --site-bg-color: #fafafa;
   --text-color: #111517;
 }
 
@@ -478,6 +478,11 @@ body {
   background-color: var(--main-bg-color);
 }
 
+.countries-item-belgium {
+  width: 375px;
+  background-color: var(--site-bg-color);
+}
+
 .countries-link {
   padding: 24px;
 }
@@ -587,4 +592,105 @@ body {
   --main-bg-color: #2B3844;
   --site-bg-color: #202C36;
   --text-color: #fff;
+}
+
+.back {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  background-color: var(--site-bg-color);
+  color: var(--text-color);
+  background-color: var(--main-bg-color);
+  background-image: url("/images/errow.svg");
+  background-repeat: no-repeat;
+  background-size: 25px 15px;
+  background-position: left 25px center;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.293139);
+}
+
+.border-countries-name {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-color);
+}
+
+.border-item {
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.1058823529);
+  border-radius: 2px;
+}
+
+.border-item:nth-child(2) {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.border-link {
+  padding: 6px 15px;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+  background-color: var(--main-bg-color);
+  color: var(--text-color);
+}
+
+.countries-item-belgium::before {
+  content: "";
+  display: inline-block;
+  width: 280px;
+  height: 230px;
+  background-image: url("../images/belgium.jpg");
+  background-repeat: no-repeat;
+  background-size: 320px 250px;
+  background-position: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .countries-item-belgium::before {
+    content: "";
+    display: inline-block;
+    width: 430px;
+    height: 230px;
+    background-size: 470px 250px;
+  }
+}
+.countries-item-belgium {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (min-width: 992px) {
+  .countries-item-belgium {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .countries-item-belgium::before {
+    content: "";
+    display: inline-block;
+    margin-right: 40px;
+    width: 560px;
+    height: 330px;
+    background-image: url("../images/belgium.jpg");
+    background-repeat: no-repeat;
+    background-size: 370px 360px;
+    background-position: center;
+  }
+  .countries-link {
+    width: 574px;
+  }
+  .border-box {
+    width: 550px;
+    display: flex;
+    align-items: center;
+  }
+  .border-list {
+    margin-left: 30px;
+  }
 }/*# sourceMappingURL=main.css.map */
